@@ -1,4 +1,4 @@
-# MavLab
+# The Keep
 
 **Hands-on Infrastructure & Cloud Administration Lab**
 
