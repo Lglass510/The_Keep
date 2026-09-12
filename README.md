@@ -1,4 +1,18 @@
-# MavLab
+# The Keep
+
+> **The stronghold where The Realm's systems live.**
+
+The Keep is The Realm's on-premises infrastructure and systems administration repository. It documents the MavLab environment: Hyper-V, Windows Server, Active Directory, DNS, Linux administration, and the machines that make the lab a functioning environment.
+
+Its current foundation is the `172.16.10.0/24` Hyper-V network containing `DC1`, `SRV2`, and `Linux1`.
+
+## Evolution
+
+The Keep will evolve from build notes into a durable systems record: current topology, service ownership, configuration state, recovery procedures, and troubleshooting history. It is the operational counterpart to The Roads' network work and The Forge's automation.
+
+---
+
+## MavLab
 
 **Hands-on Infrastructure & Cloud Administration Lab**
 
