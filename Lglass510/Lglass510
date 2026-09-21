@@ -1,21 +1,320 @@
-# 💫 About Me:
-🔭 Currently building MavLab, a home sysadmin lab with a domain controller, Windows Server Core and Ubuntu member servers, and Rocky Linux for enterprise Linux practice<br>🌱 Learning PowerShell, focused on automation<br>⚡ Also running an Azure lab to build cloud + hybrid infrastructure skills<br>🎯 Transitioning from military aviation to IT through MSSA<br>📚 When I'm not in a lab environment, I'm probably reading — and ⚡ fun fact: I went from flying drones to managing domain controllers.
+<div align="center">
 
+<img src="./assets/mavlab-hero.png" width="100%" alt="MAVLAB — The Cloud Infrastructure Realm">
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/glass510) 
+<br>
 
-# 💻 Tech Stack:
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=Lglass510&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://streak-stats.demolab.com/?user=Lglass510&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=Lglass510&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+⚔️ MAVLAB
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+THE CLOUD INFRASTRUCTURE REALM
 
----
-[![](https://komarev.com/ghpvc/?username=Lglass510&icon=4&color=2)](https://visitcount.itsvg.in)
+☁️ Azure   ✦   ⚙️ PowerShell   ✦   🛡️ Security   ✦   🏗️ Automation
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<br>
+
+Curiosity → Capability → Automation → Expansion
+
+Build. Secure. Automate. Expand.
+
+</div>
+
+🧭 ENTER THE REALM
+
+Welcome to MAVLAB, my hands-on cloud infrastructure environment.
+
+This is where I document the transition from systems administration into Azure infrastructure, PowerShell automation, and cloud security—building real environments, understanding how they work, securing them, and eventually defining them as code.
+
+My purpose: Build the infrastructure. Secure the environment. Automate the work. Expand the capability.
+
+<br>
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+<a href="https://github.com/Lglass510/Azure_Lab">
+<img src="./assets/the-realm.png" width="100%" alt="Sky Hold">
+</a>
+
+🏰 SKY HOLD
+
+AZURE INFRASTRUCTURE
+
+Build the foundation.
+
+Virtual Machines
+
+Virtual Networks
+
+Storage
+
+Identity
+
+Monitoring
+
+Azure Security
+
+<a href="https://github.com/Lglass510/Azure_Lab">→ Enter Sky Hold</a>
+
+</td>
+
+<td width="33%" valign="top">
+
+<a href="https://github.com/Lglass510/mavlab">
+<img src="./assets/the-forge.png" width="100%" alt="The Forge">
+</a>
+
+⚙️ THE FORGE
+
+POWERSHELL AUTOMATION
+
+Turn knowledge into capability.
+
+Azure Administration
+
+PowerShell Scripts
+
+Automation
+
+Reporting
+
+System Administration
+
+Troubleshooting
+
+<a href="https://github.com/Lglass510/mavlab">→ Enter the Forge</a>
+
+</td>
+
+<td width="33%" valign="top">
+
+<a href="https://github.com/Lglass510/ReaperSOC">
+<img src="./assets/the-ward.png" width="100%" alt="The Ward">
+</a>
+
+🛡️ THE WARD
+
+CLOUD SECURITY
+
+Protect the environment.
+
+Security+
+
+Identity Security
+
+Azure Security
+
+Monitoring
+
+Threat Detection
+
+Hardening
+
+<a href="https://github.com/Lglass510/ReaperSOC">→ Enter the Ward</a>
+
+</td>
+</tr>
+</table>
+
+🏛️ THE LAB
+
+<a href="https://github.com/Lglass510/mavlab">
+<img src="./assets/the-lab.png" width="100%" alt="The Lab">
+</a>
+
+SYSTEMS & INFRASTRUCTURE FOUNDATIONS
+
+Before the cloud, there is infrastructure.
+
+The Lab represents the foundation behind everything I build in Azure: understanding operating systems, identity, networking, and the systems that make modern infrastructure work.
+
+⚔️ Foundation
+
+Focus
+
+🖥️ Windows
+
+Administration & troubleshooting
+
+👥 Active Directory
+
+Identity & access
+
+🐧 Linux
+
+System administration
+
+🌐 Networking
+
+Connectivity & infrastructure
+
+🖧 Virtualization
+
+Hands-on environments
+
+🔧 Troubleshooting
+
+Understanding systems
+
+Understand the system before attempting to automate it.
+
+<a href="https://github.com/Lglass510/mavlab">→ Enter the Lab</a>
+
+📜 THE ARCHIVES
+
+<img src="./assets/the-archives.png" width="100%" alt="The Archives">
+
+NOTES & DOCUMENTATION
+
+The Archives are where knowledge becomes reusable.
+
+Here I collect technical notes, command references, lessons learned, study material, and documentation from the environments I build.
+
+📘 Azure Notes
+⚙️ PowerShell Notes
+🛡️ Security Notes
+🐧 Linux Notes
+🌐 Networking Notes
+📋 Cheat Sheets
+🧠 Lessons Learned
+
+Knowledge preserved. Capability expanded.
+
+🌐 THE NETWORK
+
+<a href="https://github.com/Lglass510/mavlab/tree/main/Networking">
+<img src="./assets/the-network.png" width="100%" alt="The Network">
+</a>
+
+CONNECTIVITY & ARCHITECTURE
+
+Every system is connected.
+
+The Network is the darker side of the MAVLAB realm—a place where connectivity, exposure, routing, DNS, and network security meet.
+
+🌐 Networking
+🔗 Connectivity
+📡 DNS
+🔀 Routing
+🛡️ Network Security
+☁️ Azure Networking
+
+Understand what connects the realm. Secure what crosses it.
+
+<a href="https://github.com/Lglass510/mavlab/tree/main/Networking">→ Enter the Network</a>
+
+🏔️ THE ASCENT
+
+<a href="https://github.com/Lglass510/Azure_Lab">
+<img src="./assets/the-ascent.png" width="100%" alt="The Ascent">
+</a>
+
+INFRASTRUCTURE AS CODE
+
+The next chapter is built higher.
+
+My long-term progression moves from administering infrastructure to automating it and ultimately defining it as code.
+
+Azure Administration
+        ↓
+PowerShell Automation
+        ↓
+Azure Security
+        ↓
+Azure CLI
+        ↓
+ARM Templates
+        ↓
+Bicep
+        ↓
+Infrastructure as Code
+
+Future Focus
+
+🏗️ ARM Templates
+🏗️ Bicep
+⚙️ Azure CLI
+🔄 Automation
+📦 Modular Deployments
+🛡️ Secure Infrastructure
+
+The goal is no longer simply managing infrastructure. The goal is defining infrastructure.
+
+<a href="https://github.com/Lglass510/Azure_Lab">→ Begin the Ascent (in Sky Hold)</a>
+
+⚔️ CURRENT QUESTS
+
+🛡️ Security+
+
+Strengthening and applying security fundamentals to the cloud environments I build.
+
+☁️ Azure
+
+Building practical cloud infrastructure and administration skills.
+
+⚙️ PowerShell
+
+Developing automation for infrastructure administration and Azure workflows.
+
+🏔️ ARM + Bicep
+
+Preparing to build repeatable infrastructure through code.
+
+🗺️ THE ROADMAP
+
+<img src="./assets/mavlab-roadmap.png" width="100%" alt="The MAVLAB Roadmap">
+
+                         🏔️ THE ASCENT
+                           ARM + Bicep
+                                ↑
+        🛡️ THE WARD  ←──────  MAVLAB  ──────→  🏰 SKY HOLD
+          Security                              Azure
+                                ↑
+                          ⚙️ THE FORGE
+                            PowerShell
+                                ↑
+                           🏛️ THE LAB
+                  Windows • Linux • Networking
+                                ↑
+                         📜 THE ARCHIVES
+                      Notes • Documentation
+
+<div align="center">
+
+⚔️ THE MAVLAB PRINCIPLE
+
+✦ Curiosity
+
+Ask how the system works.
+
+⚔️ Capability
+
+Learn to build and administer it.
+
+⚙️ Automation
+
+Make the work repeatable.
+
+🏔️ Expansion
+
+Build something larger.
+
+<br>
+
+Curiosity → Capability → Automation → Expansion
+
+<br>
+
+☁️ Build the infrastructure.
+
+🛡️ Secure the environment.
+
+⚙️ Automate the work.
+
+🏔️ Expand the capability.
+
+<br>
+
+The lab is never finished. The realm keeps expanding.
+
+</div>
