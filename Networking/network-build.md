@@ -87,7 +87,7 @@ The resulting route was:
 172.16.10.0/24 dev eth0 proto kernel scope link src 172.16.10.30
 ```
 
-![Linux1 Routing Table](../Linux/screenshots/LinuxIPRouteOutput.png)
+![Linux1 Routing Table](../Ubuntu-Server/screenshots/LinuxIPRouteOutput.png)
 
 This indicates that Linux recognizes `172.16.10.0/24` as a directly connected network and sends traffic for that subnet through `eth0`.
 

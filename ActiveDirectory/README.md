@@ -56,7 +56,7 @@ Name, Username, Department, Title
 
 Before any employee could be onboarded, managers needed to exist in AD. Using `Where-Object`, the manager list was filtered down to a single department to verify the logic before running it against everyone:
 
-![Filtering and creating manager accounts](images/manager_creation.png)
+![Filtering and creating manager accounts](manager_creation.png)
 
 Each manager was created with `New-ADUser` and placed into their departmental OU under `Managers`, using the same `$OU` string-building pattern that would later be reused for employees.
 
@@ -66,7 +66,7 @@ Each manager was created with `New-ADUser` and placed into their departmental OU
 
 The employee CSV didn't reference managers by their real usernames — it used generic role labels like `it.manager` or `hr.manager`. Rather than editing the source data, a hashtable was built to translate those labels into real AD identities:
 
-![Importing employees and building the ManagerMap](images/managermap_setup.png)
+![Importing employees and building the ManagerMap](managermap_setup.png)
 
 ```powershell
 $ManagerMap = @{
@@ -86,7 +86,7 @@ This kept the CSV format decoupled from the actual AD environment — a small de
 
 With managers created and the mapping in place, the full `foreach` loop brought everything together: OU placement, duplicate detection, manager resolution, account creation, and conditional group assignment.
 
-![The complete employee onboarding loop](images/employee_onboarding_script.png)
+![The complete employee onboarding loop](employee_onboarding_script.png)
 
 ```powershell
 foreach ($Employee in $Employees) {
