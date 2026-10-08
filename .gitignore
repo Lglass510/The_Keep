@@ -1,0 +1,2 @@
+# Installer images: download from the vendor instead of committing
+*.iso
