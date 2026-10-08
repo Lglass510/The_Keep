@@ -141,6 +141,7 @@ Areas include:
 ### Documentation
 
 * [Server Core Deployment](./ServerCore/srv2-deployment.md)
+* [DC1 Vulnerability Assessment](./VulnerabilityAssessment/README.md): nmap from Kali, then patch-level investigation from the inside
 
 ---
 
