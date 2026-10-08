@@ -148,7 +148,7 @@ Using Ubuntu alongside the Windows infrastructure to build familiarity with Linu
 
 ### Documentation
 
-* [Linux Networking](./Linux/linux-networking.md)
+* [Linux Networking](./Ubuntu-Server/linux-networking.md)
 
 ---
 
