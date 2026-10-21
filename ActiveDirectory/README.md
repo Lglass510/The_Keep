@@ -8,11 +8,12 @@
 
 ## Active Directory labs in this folder
 
+Cloud identity work (Entra ID bulk user creation) is in [The Sky Hold](https://github.com/Lglass510/The_Sky_Hold/blob/main/Identity/entra-bulk-user-creation.md).
+
 | Lab | What it is | Evidence |
 | --- | --- | --- |
 | [Domain build](./domain-build.md) | Windows Server 2025 DC (`Glass-DC1`), DNS, `glasslab.local`, base OU structure | Screenshots of OU creation and ADUC |
 | **Bulk onboarding (this page)** | 206-record new-hire CSV, 10 managers, 5 department OUs, 2 security groups | CSV, script, screenshots |
-| [50 users, 5 security groups](./ad-lab-50-users-5-groups.md) | Earlier, smaller lab | Write-up pending screenshots |
 
 ## By the numbers
 

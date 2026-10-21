@@ -105,7 +105,7 @@ Not written up here yet: Group Policy, forest trusts, selective authentication.
 
 * [Active Directory Domain Build](./ActiveDirectory/domain-build.md)
 * [Bulk Employee Onboarding with PowerShell](./ActiveDirectory/README.md): 206-record CSV, 10 managers, 5 department OUs, `Contractor` and `Remote` groups, with the [script](./ActiveDirectory/scripts/Invoke-EmployeeOnboarding.ps1)
-* [50 Users and 5 Security Groups](./ActiveDirectory/ad-lab-50-users-5-groups.md) (evidence pending)
+* [Entra ID bulk user creation](https://github.com/Lglass510/The_Sky_Hold/blob/main/Identity/entra-bulk-user-creation.md) (cloud counterpart, in The Sky Hold)
 * [ReaperSOC: SSH from Rocky Linux to the domain controller](./ReaperSOC/README.md)
 
 ---
