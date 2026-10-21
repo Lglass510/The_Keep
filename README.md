@@ -57,6 +57,12 @@ The most in-depth writeup in this repo — a full build-and-troubleshoot case st
 
 ![NAT configuration verification](./Networking/Hyper-V-NAT-Gateway/screenshots/get-netnat.png)
 
+## 🌟 Featured Project: Active Directory Bulk Onboarding
+
+Help-desk-style account provisioning, done with PowerShell instead of clicks: a 206-record new-hire CSV turned into AD accounts placed in the right department OU, linked to one of 10 managers through the `Manager` attribute, and added to `Contractor` and `Remote` groups based on CSV flags. Built and tested one record at a time before the full run, with a duplicate check that skips existing accounts.
+
+**[→ Read the write-up](./ActiveDirectory/README.md)**
+
 ---
 
 ## Current Environment
@@ -89,16 +95,18 @@ Building and administering a Windows domain environment with:
 * Domain Controllers
 * Users and Groups
 * Organizational Units
-* Group Policy
 * DNS
 * Authentication and Authorization
-* Forest Trusts
-* Selective Authentication
 * PowerShell administration
+
+Not written up here yet: Group Policy, forest trusts, selective authentication.
 
 ### Documentation
 
 * [Active Directory Domain Build](./ActiveDirectory/domain-build.md)
+* [Bulk Employee Onboarding with PowerShell](./ActiveDirectory/README.md): 206-record CSV, 10 managers, 5 department OUs, `Contractor` and `Remote` groups, with the [script](./ActiveDirectory/scripts/Invoke-EmployeeOnboarding.ps1)
+* [50 Users and 5 Security Groups](./ActiveDirectory/ad-lab-50-users-5-groups.md) (evidence pending)
+* [ReaperSOC: SSH from Rocky Linux to the domain controller](./ReaperSOC/README.md)
 
 ---
 
@@ -175,11 +183,13 @@ I'm intentionally learning PowerShell beyond individual commands by understandin
 
 # Azure & Infrastructure as Code
 
-I'm currently extending MavLab into Microsoft Azure.
+The Azure side of the lab lives in its own repositories:
 
-My focus is on understanding how the infrastructure concepts I've learned on-prem translate into cloud environments.
+* [The Sky Hold](https://github.com/Lglass510/The_Sky_Hold): VNets, subnets, NSGs and storage hardening with Az PowerShell and Azure CLI
+* [The Ward](https://github.com/Lglass510/The_Ward_Sentinel_Soar): Microsoft Sentinel detection and automated response for Entra ID privilege escalation
+* [The Ascent](https://github.com/Lglass510/The_Ascent_Bicep_Sentinel): The Ward rebuilt from code with Bicep
 
-Current areas of study:
+Areas covered across them:
 
 * Microsoft Azure
 * Microsoft Entra ID
@@ -195,8 +205,6 @@ Current areas of study:
 * Infrastructure as Code
 
 The goal is to move from manually configuring resources to **building repeatable infrastructure through code.**
-
-Azure work will be added here as the lab develops.
 
 ---
 
@@ -257,10 +265,8 @@ Future troubleshooting case studies will cover areas such as:
 * DNS
 * Group Policy
 * Hyper-V
-* Windows Server Failover Clustering
-* iSCSI
-* MPIO
-* Data Deduplication
+
+Practiced in MSSA Server and Cloud Administration course labs, not written up here: Windows Server Failover Clustering, iSCSI, MPIO, Data Deduplication.
 
 **Cloud**
 

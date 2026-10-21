@@ -6,6 +6,36 @@
 
 ---
 
+## Active Directory labs in this folder
+
+| Lab | What it is | Evidence |
+| --- | --- | --- |
+| [Domain build](./domain-build.md) | Windows Server 2025 DC (`Glass-DC1`), DNS, `glasslab.local`, base OU structure | Screenshots of OU creation and ADUC |
+| **Bulk onboarding (this page)** | 206-record new-hire CSV, 10 managers, 5 department OUs, 2 security groups | CSV, script, screenshots |
+| [50 users, 5 security groups](./ad-lab-50-users-5-groups.md) | Earlier, smaller lab | Write-up pending screenshots |
+
+## By the numbers
+
+Counted from the files in this folder, not estimated:
+
+| Item | Count | Source |
+| --- | --- | --- |
+| Records in the new-hire CSV | 206 | [`mavlab_employees.csv`](./mavlab_employees.csv) |
+| Department OUs (Employees and Managers trees) | 5 each: HR, IT, Legal, Finance, Sales | [OU screenshot](./screenshots/OUs_organized.png) |
+| Manager accounts (2 per department) | 10 | [`managers.csv` import](./screenshots/managers_csv_imported.png) |
+| CSV rows that are managers (skipped by the duplicate check) | 5 | CSV usernames that match `$ManagerMap` |
+| New employee accounts the script would create | 201 | 206 - 5 |
+| Security groups | 2: `Contractor`, `Remote` | [Groups OU in ADUC](./screenshots/contractor_and_remote_groups.png) |
+| CSV rows flagged Contractor / Remote / both | 41 / 123 / 41 | CSV |
+
+**Not captured yet:** a screenshot of the final account and group-member counts after the full run. The verification block at the end of [`Invoke-EmployeeOnboarding.ps1`](./scripts/Invoke-EmployeeOnboarding.ps1) prints them; that screenshot will be added the next time the lab is rebuilt.
+
+## The script
+
+[`scripts/Invoke-EmployeeOnboarding.ps1`](./scripts/Invoke-EmployeeOnboarding.ps1) collects the code from the lab session (shown in the screenshots below) into one file. It prompts for the initial password instead of typing it in plain text, and supports `-WhatIf` for a dry run.
+
+---
+
 ## 📖 The Story
 
 Every real IT department deals with onboarding: new hires show up in a spreadsheet, and someone (or something) has to turn that spreadsheet into working accounts — placed in the right OU, tied to the right manager, and dropped into the right security groups.
@@ -45,7 +75,7 @@ Two CSVs drive the entire workflow:
 FirstName, LastName, Department, Title, Username, Manager, Contractor, Remote
 ```
 
-**`mavlab_managers.csv`** — the leadership layer, created first so employees would have someone to report to
+**`managers.csv`** (not in this repo) — the leadership layer, 10 managers, created first so employees would have someone to report to
 ```text
 Name, Username, Department, Title
 ```

@@ -1,5 +1,6 @@
-
 # Active Directory Employee Onboarding Automation
+
+> Detailed build notes. The main write-up, with the verified counts and the runnable script, is the [README](./README.md).
 
 ## Overview
 
@@ -32,7 +33,7 @@ Employees
 ├── Legal
 ├── Finance
 └── Sales
-````
+```
 
 ### Manager OUs
 
@@ -54,8 +55,8 @@ Each departmental manager OU contains the managers responsible for that departme
 Two security groups were created to support additional access and policy management:
 
 ```text
-Contractors
-RemoteWorkers
+Contractor
+Remote
 ```
 
 These groups are populated based on employee attributes in the onboarding CSV.
@@ -105,7 +106,7 @@ The CSV acts as the source of truth for the employee onboarding process.
 Manager information is maintained separately in:
 
 ```text
-C:\Users\Administrator\Documents\Data\mavlab_managers.csv
+C:\Users\Administrator\Documents\Data\managers.csv
 ```
 
 The manager CSV contains:
@@ -202,8 +203,8 @@ The following CSV properties were mapped to Active Directory attributes:
 | Title      | Title                |
 | Department | OU placement         |
 | Manager    | Manager relationship |
-| Contractor | Contractors group    |
-| Remote     | RemoteWorkers group  |
+| Contractor | Contractor group    |
+| Remote     | Remote group  |
 
 The initial lab password was applied to newly created accounts and users were configured to change their password at first logon.
 
@@ -285,7 +286,7 @@ Remote
 
 These values determine group membership.
 
-### Contractors
+### Contractor
 
 If:
 
@@ -296,14 +297,14 @@ Contractor = TRUE
 the user is added to:
 
 ```text
-Contractors
+Contractor
 ```
 
 using:
 
 ```powershell
 Add-ADGroupMember `
-    -Identity "Contractors" `
+    -Identity "Contractor" `
     -Members $Employee.Username
 ```
 
@@ -318,14 +319,14 @@ Remote = TRUE
 the user is added to:
 
 ```text
-RemoteWorkers
+Remote
 ```
 
 using:
 
 ```powershell
 Add-ADGroupMember `
-    -Identity "RemoteWorkers" `
+    -Identity "Remote" `
     -Members $Employee.Username
 ```
 
@@ -342,8 +343,8 @@ Remote     = TRUE
 results in membership in:
 
 ```text
-Contractors
-RemoteWorkers
+Contractor
+Remote
 ```
 
 ---
@@ -362,7 +363,7 @@ The workflow was tested in stages:
 6. Tested manager lookup using an employee record.
 7. Assigned a manager to a test employee.
 8. Verified the AD `Manager` attribute.
-9. Created Contractor and RemoteWorkers groups.
+9. Created Contractor and Remote groups.
 10. Tested group membership using an employee marked as both contractor and remote.
 11. Generated a preview of all employee records before account creation.
 12. Ran the final onboarding automation against the employee dataset.
@@ -397,9 +398,9 @@ Create Employee Account
      v
 Assign Manager
      |
-     +---- Contractor = TRUE ---> Contractors
+     +---- Contractor = TRUE ---> Contractor
      |
-     +---- Remote = TRUE -------> RemoteWorkers
+     +---- Remote = TRUE -------> Remote
 ```
 
 This workflow was used to create the employee accounts and configure their organizational placement, manager relationships, and applicable security group memberships.
@@ -445,7 +446,3 @@ Potential next steps include:
 * Building a reusable PowerShell function/module for employee onboarding
 * Testing bulk onboarding with different CSV datasets
 * Automating onboarding and offboarding workflows
-
-````
-
-
